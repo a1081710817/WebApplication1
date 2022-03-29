@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Customers]
 (
-	[CustomerPhone] NVARCHAR(24) NOT NULL PRIMARY KEY, 
-    [CustomerName] NCHAR(50) NOT NULL, 
-    [DATE] NVARCHAR(24) NOT NULL
+	[Phone] NVARCHAR(24) NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [Date] NVARCHAR(8) NOT NULL, 
+    [Time] NVARCHAR(6) NOT NULL
 )
