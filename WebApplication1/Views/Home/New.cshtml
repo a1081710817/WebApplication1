@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "預約";
+}
+
+ @*
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+*@
+
+<div class="text-left">
+     <div class="panel-heading">預約畫面</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label>預約姓名：</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>預約電話(手機)：</label>
+            <input type="text" class="form-control" oninput = "value=value.replace(/[^\d]/g,'')">
+        </div>
+        <div class="form-group">
+            <label>預約日期：</label>
+             <input type="date" class="form-control font-weight-bold col-lg-4 text-center" style="font-size:20px" autocomplete="off" id="InputBirth" />
+        </div>
+        <div class="form-group">
+            <label>預約時間：</label> 
+            <input type="time" class="form-control font-weight-bold col-lg-4 text-center" style="font-size:20px" step="1800" min="00:00" max="23:59" id="appt" />
+        </div>
+        @*
+        <div class="form-group">
+            <label>密碼</label>
+            <input type="password" class="form-control">
+        </div>
+        *@
+    </div>
+    <div class="panel-footer">
+        <button type="button" class="btn btn-primary">預約</button>
+    </div>
+</div>

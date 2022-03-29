@@ -13,16 +13,23 @@ namespace WebApplication1.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult New()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Read()
         {
             return View();
         }
-
+        public IActionResult Update()
+        {
+            return View();
+        }
+        public IActionResult Delete()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
