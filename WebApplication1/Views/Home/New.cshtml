@@ -14,11 +14,11 @@
     <div class="panel-body">
         <div class="form-group">
             <label>預約姓名：</label>
-            <input type="text" class="form-control">
+            <input type="text" maxlength="12" class="form-control">
         </div>
         <div class="form-group">
             <label>預約電話(手機)：</label>
-            <input type="text" class="form-control" oninput = "value=value.replace(/[^\d]/g,'')">
+            <input type="text" class="form-control" maxlength="10" oninput = "value=value.replace(/[^\d]/g,'')">
         </div>
         <div class="form-group">
             <label>預約日期：</label>
