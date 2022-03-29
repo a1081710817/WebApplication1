@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "查詢";
+}
+
+<div class="text-left">
+     <div class="panel-heading">查詢畫面</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label>電話(手機)：</label>
+            <input type="text" class="form-control" oninput = "value=value.replace(/[^\d]/g,'')">
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button type="button" class="btn btn-primary">查詢</button>
+    </div>
+</div>
